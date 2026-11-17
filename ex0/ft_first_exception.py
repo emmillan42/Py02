@@ -14,6 +14,7 @@ def run_test(test_str: str) -> None:
 def test_temperature() -> None:
     run_test("25")
     run_test("abc")
+    run_test(None)  # type: ignore[arg-type]
 
 
 def main() -> None:
